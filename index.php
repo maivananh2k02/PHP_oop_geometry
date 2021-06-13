@@ -1,0 +1,26 @@
+<?php
+include 'Shape.php';
+include 'Circle.php';
+include 'Cylinder.php';
+include 'R.php';
+include 'Square.php';
+$circle=new Circle('circle','20');
+$circle->display();
+echo "<br>chu vi la :".$circle->circlePerimeter();
+echo "<br>dien tich la :".$circle->circleArea()."<br>";
+echo '<br>';
+$cylinder=new Cylinder('Cylinder','20',10);
+$cylinder->display();
+echo "<br>dien tich xung quanh".$cylinder->surroundingArea();
+echo "<br>dien tich toan phan".$cylinder->totalArea();
+echo "<br>the tich".$cylinder->volume()."<br>";
+echo '<br>';
+$rectangle=new R('rectangle','20','10');
+$rectangle->disPlay();
+echo "chu vi :".$circle->circlePerimeter();
+echo "<br>dien tich: ".$circle->circleArea()."<br>";
+echo '<br>';
+$square=new Square('square','20');
+$square->disPlay();
+echo "<br>chu vi :".$square->squarePerimeter();
+echo "<br>dien tich".$square->squareArea();
